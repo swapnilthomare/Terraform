@@ -50,3 +50,8 @@ value = aws_instance.os1.instance_state
   
 }
 
+
+output "Public_url" {
+     value = "http://${aws_instance.os1.public_ip}/index.html"
+  
+}

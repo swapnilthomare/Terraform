@@ -1,1 +1,3 @@
-output
+output "o1" {
+    value = timestamp()
+}
