@@ -39,6 +39,14 @@ resource "aws_volume_attachment" "my_ebs_attach_ec2" {
 
 resource "null_resource" "null1" {
 
+
+  triggers = {
+    //mytest = "hello"
+
+    mytest = timestamp()
+  }
+
+
   connection {
     type     = "ssh"
     user     = "ec2-user"
